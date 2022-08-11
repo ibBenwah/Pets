@@ -4,6 +4,7 @@ namespace Pets
     internal abstract class Pet
     {
         public string Name { get; set; }
+        public string Noise { get; set; }
         public virtual void MakeHappyNoise()
         {
             Console.WriteLine("caw caw!");
