@@ -1,14 +1,15 @@
 ﻿using System;
 namespace Pets
 {
-    abstract class Panther:Pet
+    public class Panther:Pet
     {
+        public string Noise { get; set; }
 
         public Panther()
         {
-            
+            Noise = "RAWWWRRRR";
         }
-        public override virtual void MakeHappyNoise()
+        public override  void MakeHappyNoise()
         {
             Console.WriteLine("RAWWWRRRR");
         }
